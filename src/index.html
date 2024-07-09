@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.2.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.2.0/js/bootstrap.bundle.min.js"></script>
+    <title>Jane Doe Portfolio</title>
+  </head>
+  <body></body>
+</html>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Jane Doe</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#slider">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#apropos">À propos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<section id="slider" class="text-center bg-info text-white py-5">
+  <div class="container">
+    <img src="./img/jane-doe.png" class="rounded-circle mb-4" alt="Jane Doe" />
+    <h1 class="text-uppercase">Jane Doe</h1>
+    <h2>Développeuse web fullstack</h2>
+  </div>
+</section>
+<section id="portfolio" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Portfolio</h2>
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <img
+            src="./img/portfolio/projet1.png"
+            class="card-img-top rounded"
+            alt="Projet 1"
+          />
+          <div class="card-body">
+            <h3 class="card-title">Projet 1</h3>
+          </div>
+          <img
+            src="./img/portfolio/projet2.png"
+            class="card-img-top rounded"
+            alt="Projet 1"
+          />
+          <div class="card-body">
+            <h3 class="card-title">Projet 2</h3>
+          </div>
+          <img
+            src="./img/portfolio/projet3.png"
+            class="card-img-top rounded"
+            alt="Projet 1"
+          />
+          <div class="card-body">
+            <h3 class="card-title">Projet 3</h3>
+          </div>
+          <img
+            src="./img/portfolio/projet4.png"
+            class="card-img-top rounded"
+            alt="Projet 1"
+          />
+          <div class="card-body">
+            <h3 class="card-title">Projet 4</h3>
+          </div>
+          <img
+            src="./img/portfolio/projet5.png"
+            class="card-img-top rounded"
+            alt="Projet 1"
+          />
+          <div class="card-body">
+            <h3 class="card-title">Projet 5</h3>
+          </div>
+          <img
+            src="./img/portfolio/projet6.png"
+            class="card-img-top rounded"
+            alt="Projet 1"
+          />
+          <div class="card-body">
+            <h3 class="card-title">Projet 6</h3>
+          </div>
+        </div>
+      </div>
+      <!-- Répétez pour les autres projets -->
+    </div>
+  </div>
+</section>
+<section id="apropos" class="bg-info text-white py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>À propos</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+          condimentum.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <p>Dolor sit amet, consectetur adipiscing elit. Nulla condimentum.</p>
+      </div>
+    </div>
+    <a href="path/to/CV.pdf" class="btn btn-light mt-3">Téléchargez mon CV</a>
+  </div>
+</section>
+<section id="contact" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Me contacter</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Mes coordonnées</h3>
+        <p><i class="bi bi-geo-alt"></i> 8 rue Trousseau, 75011 Paris</p>
+        <p><i class="bi bi-phone"></i> 06 14 90 96 44</p>
+        <p><i class="bi bi-envelope"></i> jane.doe@gmail.com</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=..."
+          width="100%"
+          height="200"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+      <div class="col-md-6">
+        <h3>Formulaire de contact</h3>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Votre nom (*)</label>
+            <input type="text" class="form-control" id="name" required />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Votre email (*)</label>
+            <input type="email" class="form-control" id="email" required />
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label"
+              >Votre numéro de téléphone (*)</label
+            >
+            <input type="tel" class="form-control" id="phone" required />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Votre message (*)</label>
+            <textarea
+              class="form-control"
+              id="message"
+              rows="3"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Envoyer</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="text-center py-3">
+  <div class="container">
+    <p>© Jane Doe</p>
+  </div>
+</footer>
+</body>
+</html>
